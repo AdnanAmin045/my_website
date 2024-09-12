@@ -1,4 +1,5 @@
 import React from 'react'
+import aboutPic from '../resources/about-Pic.png'
 
 export default function About(props) {
     return (
@@ -14,7 +15,7 @@ export default function About(props) {
                 </a>
             </div>
             <div className="about-img relative hidden sm:block w-[40%] bg-white h-auto after:absolute after:w-[20vw] after:h-[15vw] after:top-[22.9vw] after:left-[10vw] after:bg-[#3b63ff] after:rounded-[0.4vw] after:-z-10 after:content-[''] before:absolute before:w-[20vw] before:h-[15vw] before:-top-[0.5vw] before:-left-[0.5vw] before:bg-[#3b63ff] before:rounded-[0.4vw] before:-z-10 before:content-[''] ">
-                <img src="\Pictures\about-Pic.png" alt="" />
+                <img src={aboutPic} alt="myPicture" />
             </div>
         </div>
     );

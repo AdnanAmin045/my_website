@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import profilePic from '../resources/profile-pic.png'
 
 
 export default function Navbar(props) {
@@ -21,7 +22,7 @@ export default function Navbar(props) {
             smooth={true}
             offset={-100}
             duration={500}>
-          <img className="sm:w-[3vw] sm:h-[3vw] cursor-pointer" src="\Pictures\profile-pic.png" alt="" />
+          <img className="sm:w-[3vw] sm:h-[3vw] cursor-pointer" src={profilePic} alt="" />
         </Link>
         <i onClick={changeMenu} className={`${menuIcon} text-[8vw] text-black dark:text-white font-bold sm:hidden`}></i>
         <div className='hidden sm:flex sm:gap-7 sm:text-[1.2vw]'>

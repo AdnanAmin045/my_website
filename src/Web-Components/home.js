@@ -1,6 +1,7 @@
 
 import React, { useEffect } from "react";
 import { useRef } from "react";
+import profilePicbgRemover from '../resources/profilePic-bgRemove.png'
 
 
 export default function Home(props) {
@@ -86,7 +87,7 @@ export default function Home(props) {
                     </div>
                 </div>
                 <div className="sm:relative order-[-1] sm:after:content-[''] sm:after:absolute sm:after:w-full sm:after:h-[75%] sm:after:top-[5vw] sm:after:left-0 sm:after:border-[10px] sm:after:border-[#3b63ff] sm:after:z-[-20]">
-                    <img className='w-[80vw] sm:w-[25vw]' src="\Pictures\profilePic-bgRemove.png" alt="" />
+                    <img className='w-[80vw] sm:w-[25vw]' src={profilePicbgRemover} alt="" />
                     <div className=" z-[-10] hidden sm:block absolute w-[0.4vw] h-[0.4vw] bg-[#3b63ff] rounded-[50%] drop1 top-[8vw] left-[5vw]"></div>
                     <div className=" z-[-10] hidden sm:block absolute w-[0.4676vw] h-[0.4676vw] bg-[#3b63ff] rounded-[50%] top-[10vw] left-[5vw]"></div>
                     <div className=" z-[-10] hidden sm:block absolute w-[0.52vw] h-[0.52vw] bg-[#3b63ff] rounded-[50%] top-[6vw] left-[17vw]"></div>
